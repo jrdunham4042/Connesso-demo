@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { 
-  Home, Building2, Users, ArrowRight, Shield, Sun, Bell,
+  Building2, Users, ArrowRight, Shield, Sun, Bell,
   LogOut, Settings
 } from 'lucide-react';
 
