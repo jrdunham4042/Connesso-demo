@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { Home, Building2, Users, ArrowRight, Shield, Sun, Bell } from 'lucide-react';
+import { 
+  Home, Building2, Users, ArrowRight, Shield, Sun, Bell,
+  LogOut, Settings
+} from 'lucide-react';
 
 const DashboardCard = ({ title, value, change }) => (
   <div className="bg-white p-4 rounded-lg shadow">
@@ -39,7 +42,7 @@ export default function Home() {
         </nav>
 
         <main className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-4 gap-4 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
             <DashboardCard 
               title={portalType === 'customer' ? 'Devices Online' : 'Total Customers'} 
               value={portalType === 'customer' ? '24/24' : '2,847'}
